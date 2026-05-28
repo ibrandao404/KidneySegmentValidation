@@ -1,6 +1,6 @@
-# DICE similarity coefficient (DSC) for Kidney Segmentation Validation
+# Kidney Segmentation Validation using DSC and IoU
 
-This repository contains R scripts for interobserver validation of kidney histology segmentation in unstained brightfield images using the Dice similarity coefficient (DSC).
+This repository contains R scripts for interobserver validation of kidney histology segmentation in unstained brightfield images using the Dice similarity coefficient (DSC) and intersection over union (IoU).
 
 ## Structures analyzed
 - Glomerulus
@@ -15,7 +15,7 @@ Multiclass segmentation masks exported from QuPath were compared using DSC calcu
 - Tubules - 3 
 - Interstitium - 4 
 
-A minimum sum of 50 pixels of structure representation is required to calculate the DSC for the group.
+A minimum sum of 50 pixels of structure representation is required to perform calculations.
 
 ## Requirements
 - R
@@ -30,8 +30,8 @@ Set Working Directory to ValidationSegmentation folder. In this folder you shoul
 Run:
 
 ```r
-source("DSC_script.R")
+source("script.R")
 ```
 ## Results
 
-This script will return a results.csv file containing all data extracted for each tile. It will also return in the console the Mean Dice and SD per class.
+This script will return a results.csv file containing all data extracted for each tile. It will also return in the console the Mean and standard deviation of Dice and IoU per class.
