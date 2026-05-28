@@ -14,6 +14,7 @@ Multiclass segmentation masks exported from QuPath were compared using DSC calcu
 - Vessels - 2
 - Tubules - 3 
 - Interstitium - 4 
+
 A minimum sum of 50 pixels of structure representation is required to calculate the DSC for the group.
 
 ## Requirements
