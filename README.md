@@ -1,6 +1,4 @@
-# DICE-Sorensen-Coefficient-in-R
-
-# Kidney Segmentation Validation
+# DICE similarity coefficient for Kidney Segmentation Validation
 
 This repository contains R scripts for interobserver validation of kidney histology segmentation masks using the Dice similarity coefficient.
 
